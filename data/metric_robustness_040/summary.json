@@ -1,0 +1,113 @@
+{
+  "run": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_experiment_038",
+  "n_sequences": 120,
+  "reimplementation_max_abs_deviation_from_stored_jitter": 2.463658650975198e-07,
+  "conditions": {
+    "independent_nolora": {
+      "rgb_l1": {
+        "mean": 0.39641198913256326,
+        "std": 0.008370938695793258
+      },
+      "highfreq_l1": {
+        "mean": 0.10563509414593379,
+        "std": 0.004358852328661265
+      },
+      "p95_pair_l1": {
+        "mean": 0.4361421707272529,
+        "std": 0.009702463127836966
+      },
+      "ssim": {
+        "mean": 0.033768131215539246,
+        "std": 0.00550248474965215
+      }
+    },
+    "independent_lora": {
+      "rgb_l1": {
+        "mean": 0.26755462189515433,
+        "std": 0.010038970546933817
+      },
+      "highfreq_l1": {
+        "mean": 0.057847667733828226,
+        "std": 0.005406773243923033
+      },
+      "p95_pair_l1": {
+        "mean": 0.34253545155127846,
+        "std": 0.018801429957504903
+      },
+      "ssim": {
+        "mean": 0.24226356710824698,
+        "std": 0.03340995702548095
+      }
+    },
+    "ours_full_lora": {
+      "rgb_l1": {
+        "mean": 0.27860911587874093,
+        "std": 0.008813645343736453
+      },
+      "highfreq_l1": {
+        "mean": 0.06698494267960389,
+        "std": 0.005193708770536785
+      },
+      "p95_pair_l1": {
+        "mean": 0.35348127583662675,
+        "std": 0.01237804054887553
+      },
+      "ssim": {
+        "mean": 0.17934019109027258,
+        "std": 0.025068688960274744
+      }
+    },
+    "ours_late_lora": {
+      "rgb_l1": {
+        "mean": 0.2652966484427452,
+        "std": 0.010518015935711653
+      },
+      "highfreq_l1": {
+        "mean": 0.05720531170566877,
+        "std": 0.005158328365749115
+      },
+      "p95_pair_l1": {
+        "mean": 0.34107495745023086,
+        "std": 0.01951079152137664
+      },
+      "ssim": {
+        "mean": 0.25483384543822873,
+        "std": 0.034588718000698966
+      }
+    }
+  },
+  "paired_effects": {
+    "rgb_l1": {
+      "orientation": "positive favours treatment",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.0022579734524091084,
+      "bootstrap_ci95_low": 0.0011785876626769702,
+      "bootstrap_ci95_high": 0.0033111718421181043,
+      "sign_flip_p": 0.0003699963000369996
+    },
+    "highfreq_l1": {
+      "orientation": "positive favours treatment",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.0006423560281594594,
+      "bootstrap_ci95_low": 0.00011134981488188112,
+      "bootstrap_ci95_high": 0.0011656479351222508,
+      "sign_flip_p": 0.02906970930290697
+    },
+    "p95_pair_l1": {
+      "orientation": "positive favours treatment",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.0014604941010475233,
+      "bootstrap_ci95_low": -0.0004951420053839607,
+      "bootstrap_ci95_high": 0.003240904023249947,
+      "sign_flip_p": 0.14631853681463186
+    },
+    "ssim": {
+      "orientation": "positive favours treatment",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.012570278329981695,
+      "bootstrap_ci95_low": 0.00972217581317656,
+      "bootstrap_ci95_high": 0.015501771927293798,
+      "sign_flip_p": 9.99990000099999e-06
+    }
+  }
+}

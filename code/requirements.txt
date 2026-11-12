@@ -1,0 +1,9 @@
+torch==2.5.1
+diffusers==0.31.0
+transformers==4.46.3
+pillow
+numpy
+scipy
+pandas
+matplotlib
+python-docx

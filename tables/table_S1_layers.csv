@@ -1,0 +1,7 @@
+"Layer","Configuration","Output shape","Parameters"
+"Conv3d (in)","4 in, 16 out, kernel 3x3x3, padding 1","16x16x32x32","1744"
+"GroupNorm","4 groups, 16 channels","16x16x32x32","32"
+"Time MLP","input 1, hidden 32, output 32, SiLU","2 x 16 (scale, shift)","1120"
+"Scale and shift","features times (1 + scale) plus shift","16x16x32x32","0"
+"Conv3d (out)","16 in, 4 out, kernel 3x1x1, padding (1,0,0)","16x4x32x32","196"
+"Total","","","3092"

@@ -1,0 +1,186 @@
+{
+  "experiment": "formal_experiment_038",
+  "status": "PASS_WITH_LIMITATIONS",
+  "integrity_pass": true,
+  "checks": {
+    "row_count": true,
+    "sample_count": true,
+    "condition_set": true,
+    "no_duplicate_sample_seed_condition": true,
+    "no_missing_expected_keys": true,
+    "no_unexpected_keys": true,
+    "all_metrics_finite": true,
+    "aggregate_n_per_condition": true,
+    "synthetic_frames_present": true,
+    "source_media_present": true,
+    "output_metrics_present": true,
+    "train_eval_disjoint": true
+  },
+  "row_count": 150,
+  "independent_unit": "sample_id x seed; 16 frames within each sequence are repeated measurements, not independent samples",
+  "num_independent_assets": 10,
+  "num_seeds": 3,
+  "conditions": [
+    "independent_nolora",
+    "independent_lora",
+    "locked_lora",
+    "ours_full_lora",
+    "ours_late_lora"
+  ],
+  "train_split": {
+    "start_in_synthetic_labels": 0,
+    "end_exclusive": 150
+  },
+  "eval_split": {
+    "start_in_synthetic_labels": 150,
+    "end_exclusive": 160,
+    "sample_ids": [
+      "commons_0150_v00",
+      "commons_0151_v00",
+      "commons_0152_v00",
+      "commons_0153_v00",
+      "commons_0154_v00",
+      "commons_0155_v00",
+      "commons_0156_v00",
+      "commons_0157_v00",
+      "commons_0158_v00",
+      "commons_0159_v00"
+    ]
+  },
+  "train_eval_overlap": [],
+  "source_scope": {
+    "groups": {
+      "lica-world_GDB__typography-7": 10
+    },
+    "records": [
+      {
+        "synthetic_sample_id": "commons_0150_v00",
+        "pilot_manifest_index": 150,
+        "local_media": "media\\lica-world_GDB__typography-7_00000.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0151_v00",
+        "pilot_manifest_index": 151,
+        "local_media": "media\\lica-world_GDB__typography-7_00001.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0152_v00",
+        "pilot_manifest_index": 152,
+        "local_media": "media\\lica-world_GDB__typography-7_00002.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0153_v00",
+        "pilot_manifest_index": 153,
+        "local_media": "media\\lica-world_GDB__typography-7_00003.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0154_v00",
+        "pilot_manifest_index": 154,
+        "local_media": "media\\lica-world_GDB__typography-7_00004.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0155_v00",
+        "pilot_manifest_index": 155,
+        "local_media": "media\\lica-world_GDB__typography-7_00005.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0156_v00",
+        "pilot_manifest_index": 156,
+        "local_media": "media\\lica-world_GDB__typography-7_00006.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0157_v00",
+        "pilot_manifest_index": 157,
+        "local_media": "media\\lica-world_GDB__typography-7_00007.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0158_v00",
+        "pilot_manifest_index": 158,
+        "local_media": "media\\lica-world_GDB__typography-7_00008.png",
+        "source_group": "lica-world_GDB__typography-7"
+      },
+      {
+        "synthetic_sample_id": "commons_0159_v00",
+        "pilot_manifest_index": 159,
+        "local_media": "media\\lica-world_GDB__typography-7_00009.png",
+        "source_group": "lica-world_GDB__typography-7"
+      }
+    ]
+  },
+  "duplicates": [],
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "finite_failures": [],
+  "frame_file_failures": [],
+  "source_file_failures": [],
+  "output_file_failures": [],
+  "aggregate_counts": {
+    "independent_nolora": 30,
+    "independent_lora": 30,
+    "locked_lora": 30,
+    "ours_full_lora": 30,
+    "ours_late_lora": 30
+  },
+  "statistical_plan": {
+    "paired_effect_direction": "baseline minus treatment; positive means lower-is-better metric improved",
+    "bootstrap": "5,000 resamples of paired differences; percentile 95% CI; seed=20260903",
+    "sign_flip": "exact enumeration for n<=20; otherwise 100,000-draw Monte Carlo sign-flip test; seed=20260903",
+    "primary_family": "three prespecified background_jitter comparisons; Holm correction"
+  },
+  "primary_background_jitter": {
+    "ours_late_vs_independent_lora": {
+      "baseline": "independent_lora",
+      "treatment": "ours_late_lora",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.002257929792006809,
+      "bootstrap_ci95": [
+        0.0011785603670610243,
+        0.0033111340407696076
+      ],
+      "p_raw": 0.0003699963000369996,
+      "p_holm": 0.0003699963000369996,
+      "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+    },
+    "independent_lora_vs_independent_nolora": {
+      "baseline": "independent_nolora",
+      "treatment": "independent_lora",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.12885745124684442,
+      "bootstrap_ci95": [
+        0.12373963455566102,
+        0.1341374631950425
+      ],
+      "p_raw": 9.99990000099999e-06,
+      "p_holm": 2.999970000299997e-05,
+      "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+    },
+    "late_gate_vs_full_injection": {
+      "baseline": "ours_full_lora",
+      "treatment": "ours_late_lora",
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.01331244993540976,
+      "bootstrap_ci95": [
+        0.010873760548316767,
+        0.015706616441822713
+      ],
+      "p_raw": 9.99990000099999e-06,
+      "p_holm": 2.999970000299997e-05,
+      "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+    }
+  },
+  "limitations": [
+    "All ten held-out assets are from the same GDB typography-7 source group; cross-source generalization is not established.",
+    "The motion and foreground trajectories are procedurally synthesized; real broadcast-video robustness is not established.",
+    "No human perceptual study, semantic similarity metric, FVD/KVD, or external video-diffusion baseline is included.",
+    "locked_lora is a deterministic upper bound/reference, not a learned competing method.",
+    "bbox_iou, safe_area_violation, center_error, and trajectory_residual are deterministic foreground-composition checks and are not independent evidence of background generation quality."
+  ]
+}

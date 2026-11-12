@@ -1,0 +1,96 @@
+{
+  "experiment": "gating_sweep_039",
+  "purpose": "gating-schedule sensitivity for the timestep-conditioned temporal residual",
+  "denoising_calls": 11,
+  "call_timesteps": [
+    901,
+    801,
+    801,
+    701,
+    601,
+    501,
+    401,
+    301,
+    201,
+    101,
+    1
+  ],
+  "normalized_timesteps": [
+    0.9019019019019019,
+    0.8018018018018018,
+    0.8018018018018018,
+    0.7017017017017017,
+    0.6016016016016016,
+    0.5015015015015015,
+    0.4014014014014014,
+    0.3013013013013013,
+    0.2012012012012012,
+    0.1011011011011011,
+    0.001001001001001001
+  ],
+  "conditions": [
+    {
+      "name": "last01_lora",
+      "last_k": 1,
+      "threshold": 0.001001001001001001,
+      "permute": false
+    },
+    {
+      "name": "last02_lora",
+      "last_k": 2,
+      "threshold": 0.1011011011011011,
+      "permute": false
+    },
+    {
+      "name": "last03_lora",
+      "last_k": 3,
+      "threshold": 0.2012012012012012,
+      "permute": false
+    },
+    {
+      "name": "last04_lora",
+      "last_k": 4,
+      "threshold": 0.3013013013013013,
+      "permute": false
+    },
+    {
+      "name": "last06_lora",
+      "last_k": 6,
+      "threshold": 0.5015015015015015,
+      "permute": false
+    },
+    {
+      "name": "last08_lora",
+      "last_k": 8,
+      "threshold": 0.7017017017017017,
+      "permute": false
+    }
+  ],
+  "seeds": [
+    20260903,
+    20261903,
+    20262903
+  ],
+  "eval_split": [
+    "commons_0150_v00",
+    "commons_0151_v00",
+    "commons_0152_v00",
+    "commons_0153_v00",
+    "commons_0154_v00",
+    "commons_0155_v00",
+    "commons_0156_v00",
+    "commons_0157_v00",
+    "commons_0158_v00",
+    "commons_0159_v00"
+  ],
+  "steps": 10,
+  "temporal_scale": 0.1,
+  "controlnet_scale": 1.0,
+  "resolution": [
+    256,
+    256
+  ],
+  "started_at": "2026-11-02 17:17:59",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU"
+}

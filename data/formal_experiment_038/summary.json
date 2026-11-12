@@ -1,0 +1,61 @@
+{
+  "experiment": "formal_experiment_038",
+  "status": "completed",
+  "model_id": "runwayml/stable-diffusion-v1-5",
+  "model_dir": "D:\\sd15",
+  "controlnet_dir": "D:\\sd-controlnet-canny",
+  "style_adapter_dir": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_brand_lora_train_036\\adapter",
+  "temporal_adapter_path": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_temporal_adapter_train_037\\timestep_temporal_adapter.pt",
+  "train_split": {
+    "synthetic_label_index_start": 0,
+    "synthetic_label_index_end_exclusive": 150,
+    "note": "LoRA and timestep-conditioned temporal adapter training used local indices [0, 150); this formal evaluation uses [150, 160)."
+  },
+  "eval_split": [
+    "commons_0150_v00",
+    "commons_0151_v00",
+    "commons_0152_v00",
+    "commons_0153_v00",
+    "commons_0154_v00",
+    "commons_0155_v00",
+    "commons_0156_v00",
+    "commons_0157_v00",
+    "commons_0158_v00",
+    "commons_0159_v00"
+  ],
+  "conditions": [
+    "independent_nolora",
+    "independent_lora",
+    "locked_lora",
+    "ours_full_lora",
+    "ours_late_lora"
+  ],
+  "seeds": [
+    20260903,
+    20261903,
+    20262903
+  ],
+  "steps": 10,
+  "resolution": [
+    256,
+    256
+  ],
+  "controlnet_scale": 1.0,
+  "temporal_scale": 0.1,
+  "late_max_timestep": 0.3,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "torch": "2.5.1+cu124",
+  "diffusers": "0.31.0",
+  "started_at": "2026-09-04 13:02:13",
+  "not_a_paper_result": true,
+  "audit_status": "PASS_WITH_LIMITATIONS",
+  "num_sequences": 10,
+  "num_seeds": 3,
+  "num_rows": 150,
+  "elapsed_seconds": 2277.839,
+  "per_sample_metrics": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_experiment_038\\per_sample_metrics.csv",
+  "aggregate_metrics": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_experiment_038\\aggregate_metrics.csv",
+  "paired_effects": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_experiment_038\\paired_effects.json",
+  "interpretation": "Formal multi-sequence and multi-seed prototype evaluation on a held-out synthetic split. It is not yet a complete journal benchmark because the dataset is small and external human/semantic evaluation is not included."
+}

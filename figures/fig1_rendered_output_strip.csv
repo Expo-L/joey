@@ -1,0 +1,4 @@
+sample_id,seed,condition,frame,source_file
+commons_0150_v00,20262903,ours_late_lora,0,runs\formal_experiment_038\samples\commons_0150_v00\seed_20262903\ours_late_lora\frames\f00.png
+commons_0150_v00,20262903,ours_late_lora,8,runs\formal_experiment_038\samples\commons_0150_v00\seed_20262903\ours_late_lora\frames\f08.png
+commons_0150_v00,20262903,ours_late_lora,15,runs\formal_experiment_038\samples\commons_0150_v00\seed_20262903\ours_late_lora\frames\f15.png

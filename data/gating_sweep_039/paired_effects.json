@@ -1,0 +1,123 @@
+{
+  "last01_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last01_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.0011640716426902296,
+    "std_difference": 0.0029642861021754443,
+    "bootstrap_ci95_low": 0.00011595528448620309,
+    "bootstrap_ci95_high": 0.002190094299200506,
+    "sign_flip_p": 0.03916960830391696,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last02_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last02_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.0007006046838230538,
+    "std_difference": 0.002882837791681238,
+    "bootstrap_ci95_low": -0.0003275693121055705,
+    "bootstrap_ci95_high": 0.0016800720435049849,
+    "sign_flip_p": 0.1913880861191388,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last03_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.002257929792006809,
+    "std_difference": 0.003052531682159121,
+    "bootstrap_ci95_low": 0.0011785603670610243,
+    "bootstrap_ci95_high": 0.0033111340407696076,
+    "sign_flip_p": 0.0003699963000369996,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last04_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last04_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.002447837375932265,
+    "std_difference": 0.003471755646633443,
+    "bootstrap_ci95_low": 0.0012481072048346133,
+    "bootstrap_ci95_high": 0.003673916334079362,
+    "sign_flip_p": 0.0005899941000589994,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last06_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last06_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.00618357299102677,
+    "std_difference": 0.005145852771133824,
+    "bootstrap_ci95_low": 0.004350735782749126,
+    "bootstrap_ci95_high": 0.007953337706625457,
+    "sign_flip_p": 9.99990000099999e-06,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last08_lora_vs_independent_lora": {
+    "baseline": "independent_lora",
+    "treatment": "last08_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.00789763650960392,
+    "std_difference": 0.007498083563703088,
+    "bootstrap_ci95_low": 0.0053015911682612405,
+    "bootstrap_ci95_high": 0.010615093883126965,
+    "sign_flip_p": 9.99990000099999e-06,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last01_lora_vs_last03_lora": {
+    "baseline": "last01_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.0010938581493165798,
+    "std_difference": 0.0013026977770254564,
+    "bootstrap_ci95_low": 0.0006443831655714238,
+    "bootstrap_ci95_high": 0.0015699246409866569,
+    "sign_flip_p": 8.99991000089999e-05,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last02_lora_vs_last03_lora": {
+    "baseline": "last02_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.0015573251081837556,
+    "std_difference": 0.0014991231745874432,
+    "bootstrap_ci95_low": 0.00100862394190497,
+    "bootstrap_ci95_high": 0.002077024260328879,
+    "sign_flip_p": 1.999980000199998e-05,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last04_lora_vs_last03_lora": {
+    "baseline": "last04_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": -0.00018990758392545547,
+    "std_difference": 0.002912027811973326,
+    "bootstrap_ci95_low": -0.0012331092593570563,
+    "bootstrap_ci95_high": 0.0008066502279705489,
+    "sign_flip_p": 0.7219827801721983,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last06_lora_vs_last03_lora": {
+    "baseline": "last06_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": -0.003925643199019961,
+    "std_difference": 0.0051471948098002806,
+    "bootstrap_ci95_low": -0.005714666652596661,
+    "bootstrap_ci95_high": -0.002110970852689609,
+    "sign_flip_p": 0.0002599974000259997,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  },
+  "last11_lora_vs_last03_lora": {
+    "baseline": "last11_lora",
+    "treatment": "last03_lora",
+    "n_pairs": 30,
+    "mean_improvement_baseline_minus_treatment": 0.01331244993540976,
+    "std_difference": 0.006764733216833795,
+    "bootstrap_ci95_low": 0.010873760548316767,
+    "bootstrap_ci95_high": 0.015706616441822713,
+    "sign_flip_p": 9.99990000099999e-06,
+    "p_method": "Monte Carlo sign-flip (100,000 draws; seed=20260903)"
+  }
+}

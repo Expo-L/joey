@@ -1,0 +1,48 @@
+{
+  "experiment": "attribution_ablation_041",
+  "purpose": "component attribution: residual without LoRA, and LoRA without Canny conditioning",
+  "conditions": [
+    {
+      "name": "nolora_late08",
+      "kind": "late",
+      "lora": false,
+      "control": 1.0
+    },
+    {
+      "name": "lora_nocanny",
+      "kind": "independent",
+      "lora": true,
+      "control": 0.0
+    }
+  ],
+  "gate_calls": 8,
+  "gate_threshold": 0.7017017017017017,
+  "denoising_calls": 11,
+  "seeds": [
+    20260903,
+    20261903,
+    20262903
+  ],
+  "eval_split": [
+    "commons_0150_v00",
+    "commons_0151_v00",
+    "commons_0152_v00",
+    "commons_0153_v00",
+    "commons_0154_v00",
+    "commons_0155_v00",
+    "commons_0156_v00",
+    "commons_0157_v00",
+    "commons_0158_v00",
+    "commons_0159_v00"
+  ],
+  "steps": 10,
+  "temporal_scale": 0.1,
+  "resolution": [
+    256,
+    256
+  ],
+  "started_at": "2026-11-11 17:23:28",
+  "status": "completed",
+  "num_rows": 60,
+  "elapsed_seconds": 795.841
+}

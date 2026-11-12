@@ -1,0 +1,86 @@
+{
+  "run": "D:\\@00AAAA桌面\\工具\\ei_for_joey\\researchwrite\\broadcast-brand-diffusion\\runs\\formal_experiment_038",
+  "threshold": 0.03137254901960784,
+  "mean_static_fraction": 0.9279144287109375,
+  "conditions": {
+    "independent_nolora": {
+      "static_jitter": {
+        "mean": 0.3950408508380254,
+        "std": 0.007947124996358303
+      },
+      "moving_jitter": {
+        "mean": 0.4158974190553029,
+        "std": 0.017862255165683794
+      },
+      "full_jitter": {
+        "mean": 0.39641205767790477,
+        "std": 0.008370938791739101
+      }
+    },
+    "independent_lora": {
+      "static_jitter": {
+        "mean": 0.26349526047706606,
+        "std": 0.010173412659866496
+      },
+      "moving_jitter": {
+        "mean": 0.321457169453303,
+        "std": 0.02486313641439773
+      },
+      "full_jitter": {
+        "mean": 0.2675546114643415,
+        "std": 0.010038957039094385
+      }
+    },
+    "ours_full_lora": {
+      "static_jitter": {
+        "mean": 0.2744906723499298,
+        "std": 0.00944993420810866
+      },
+      "moving_jitter": {
+        "mean": 0.3312356342871984,
+        "std": 0.026307258579789338
+      },
+      "full_jitter": {
+        "mean": 0.2786091327667236,
+        "std": 0.008813635535268817
+      }
+    },
+    "ours_late_lora": {
+      "static_jitter": {
+        "mean": 0.2612176890174548,
+        "std": 0.010425559886504567
+      },
+      "moving_jitter": {
+        "mean": 0.31864342590173084,
+        "std": 0.026836126265934162
+      },
+      "full_jitter": {
+        "mean": 0.26529668023188907,
+        "std": 0.01051800019307916
+      }
+    }
+  },
+  "paired_effects": {
+    "static_jitter": {
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.002277571459611257,
+      "bootstrap_ci95_low": 0.0012214428062240284,
+      "bootstrap_ci95_high": 0.0033023893584807683,
+      "sign_flip_p": 0.0003199968000319997
+    },
+    "moving_jitter": {
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.002813743551572164,
+      "bootstrap_ci95_low": 3.24487686157232e-06,
+      "bootstrap_ci95_high": 0.005633088449637093,
+      "sign_flip_p": 0.06321936780632194
+    },
+    "full_jitter": {
+      "n_pairs": 30,
+      "mean_improvement_baseline_minus_treatment": 0.0022579312324523928,
+      "bootstrap_ci95_low": 0.0011785612627863884,
+      "bootstrap_ci95_high": 0.0033111319070061045,
+      "sign_flip_p": 0.0003699963000369996
+    }
+  }
+}
