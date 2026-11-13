@@ -73,7 +73,7 @@ def build():
     email = doc.add_paragraph(style="*Body of Paper*")
     email.alignment = WD_ALIGN_PARAGRAPH.CENTER
     email.paragraph_format.space_after = Pt(0)
-    runner = email.add_run("*Corresponding author: 18717009433@163.com; 594678420@qq.com; suzy0323000@qq.com")
+    runner = email.add_run("*Corresponding author: 18717009433@163.com; suzy0323000@qq.com")
     runner.font.size = Pt(10)
 
     doc.add_paragraph(style="SPIE abstract title").add_run("Abstract")
