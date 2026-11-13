@@ -57,7 +57,7 @@ def build():
 
     authors = doc.add_paragraph(style="SPIE Authors-Affils")
     authors.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    for name, mark, sep in [("Qiaoyi Zhang", "*a", ", "), ("Yan Jiang", "a", ", "), ("Shuran Yang", "a", "")]:
+    for name, mark, sep in [("Qiaoyi Zhang", "*a", ", "), ("Shuran Yang", "a", "")]:
         authors.add_run(name)
         sup = authors.add_run(mark)
         sup.font.superscript = True
